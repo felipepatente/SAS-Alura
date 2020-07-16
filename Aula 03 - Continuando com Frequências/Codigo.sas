@@ -36,7 +36,8 @@ RUN;
 
 proc freq
 	data=teste;
-	table genero*lancamento;
+	table genero*lancamento
+	/nocol norow nopercent;
 run;
 
 
